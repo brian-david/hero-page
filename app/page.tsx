@@ -1,5 +1,7 @@
+import LandingPage from "./landing-page/page";
+
 export default function Home() {
   return (
-    <h1>Home page</h1>
+    <LandingPage />
   );
 }
