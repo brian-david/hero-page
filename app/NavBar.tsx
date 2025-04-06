@@ -1,5 +1,7 @@
 'use client'
 import React from 'react'
+import Image from 'next/image';
+import Logo from '../public/blockchain-icon.svg';
 
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = React.useState<boolean>(false);
@@ -9,7 +11,7 @@ const NavBar = () => {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
-                            <span className="text-xl font-bold cursor-pointer">My Site</span>
+                            <Image src={Logo} alt="Logo" width={25} height={25} className="brightness-0 invert" />
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
